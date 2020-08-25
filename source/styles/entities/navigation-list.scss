@@ -2,10 +2,17 @@
 
   .navigation-list {
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
 
     &.theme--light &__link {
       color: #000000;
+    }
+
+    &__item {
+
+      & + & {
+        margin-left: 2%;
+      }
     }
 
     &__link {
