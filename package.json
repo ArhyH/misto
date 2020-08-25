@@ -1,0 +1,32 @@
+{
+  "name": "misto",
+  "version": "1.0.0",
+  "description": "Speed test",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "build": "gulp style",
+    "start": "gulp server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NicolaHorbach/misto.git"
+  },
+  "author": "Nikola Horbach",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NicolaHorbach/misto.git/issues"
+  },
+  "homepage": "https://github.com/NicolaHorbach/misto#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  },
+  "dependencies": {
+    "autoprefixer": "9.8.4",
+    "browser-sync": "2.26.7",
+    "gulp-plumber": "1.2.1",
+    "gulp-postcss": "8.0.0",
+    "gulp-sass": "4.1.0",
+    "gulp-sourcemaps": "2.6.5"
+  }
+}
