@@ -1,4 +1,4 @@
-@media (min-width: $min-desktop-width), (max-width: $max-desktop-width) {
+@media (min-width: $min-desktop-width) {
 
   .page-header {
 
@@ -34,6 +34,18 @@
 
     &__control {
       margin-left: auto;
+    }
+  }
+}
+
+@media (min-width: $max-desktop-width) {
+
+  .page-header {
+
+    &__body {
+      left: 50%;
+      transform: translateX(-50%);
+      width: 1450px;
     }
   }
 }

@@ -1,0 +1,9 @@
+@media (min-width: $min-desktop-width), (max-width: $max-desktop-width) {
+
+  .toggle-menu {
+
+    &.is-hidden {
+      display: none;
+    }
+  }
+}

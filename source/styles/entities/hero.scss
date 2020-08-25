@@ -1,4 +1,4 @@
-@media (min-width: $min-desktop-width), (max-width: $max-desktop-width) {
+@media (min-width: $min-desktop-width) {
 
   .hero {
     padding-top: 12%;
@@ -45,6 +45,11 @@
       margin-top: 8%;
     }
 
+    &__lists-icon {
+      display: flex;
+      margin-left: auto;
+    }
+
     &__contacts {
       display: flex;
       margin-right: 14%;
@@ -62,6 +67,19 @@
     &__contacts-text {
       position: relative;
       margin-left: 10px;
+    }
+  }
+}
+
+
+@media (min-width: $max-desktop-width) {
+
+  .hero {
+
+    &__body {
+      width: 1450px;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 }

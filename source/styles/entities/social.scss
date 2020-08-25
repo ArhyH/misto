@@ -8,15 +8,15 @@
       display: flex;
       margin-left: 10px;
 
-      &::after {
-        content: '';
-        position: absolute;
-        right: 5%;
-        display: block;
-        width: 24px;
-        height: 24px;
-        background-image: url('../images/coffee.svg');
-      }
+      // &::after {
+      //   content: '';
+      //   position: absolute;
+      //   right: 5%;
+      //   display: block;
+      //   width: 24px;
+      //   height: 24px;
+      //   background-image: url('../images/coffee.svg');
+      // }
     }
 
     &__list-item {
