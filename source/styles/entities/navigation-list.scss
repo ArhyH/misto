@@ -1,0 +1,30 @@
+@media (min-width: $min-desktop-width), (max-width: $max-desktop-width) {
+
+  .navigation-list {
+    display: flex;
+    justify-content: space-between;
+
+    &.theme--light &__link {
+      color: #000000;
+    }
+
+    &__link {
+      display: flex;
+      padding-top: 18px;
+      padding-bottom: 18px;
+      color: #ffffff;
+
+      &:hover,
+      &:focus {
+        color: rgba(255, 255, 255, 0.8);
+        box-shadow: 0 1px 0 0 #ffffff;
+      }
+    }
+
+    &__text {
+      font-size: 14px;
+      line-height: 1.4;
+      text-transform: uppercase;
+    }
+  }
+}

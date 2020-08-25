@@ -1,7 +1,39 @@
-.page-header {
-  
-  &__body {
-  
-  // Place for custom styles
+@media (min-width: $min-desktop-width), (max-width: $max-desktop-width) {
+
+  .page-header {
+
+    &__body {
+      position: absolute;
+      top: 0;
+      display: flex;
+      width: 100%;
+      box-sizing: border-box;
+      padding-top: 3%;
+      padding-left: 5%;
+      padding-right: 5%;
+      z-index: 2;
+    }
+
+    &__logo {
+      display: flex;
+    }
+
+    &__logo-img {
+      fill: #ffffff;
+
+      &.theme--light {
+        fill: #C94D18;
+      }
+    }
+
+    &__navigation {
+      width: 38%;
+      margin-left: 5%;
+      height: fit-content;
+    }
+
+    &__control {
+      margin-left: auto;
+    }
   }
 }

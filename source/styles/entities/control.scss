@@ -1,0 +1,36 @@
+@media (min-width: $min-desktop-width), (max-width: $max-desktop-width) {
+
+  .control {
+    display: flex;
+    justify-content: center;
+    padding: 18px 40px;
+    background-color: #ffffff;
+
+
+    &.theme--light {
+      background-color: #C94D18;
+    }
+
+    &.theme--light &__text {
+      color: #ffffff;
+    }
+
+    &__text {
+      font-size: 14px;
+      line-height: 1.4;
+      text-transform: uppercase;
+      color: #C94D18;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: rgba(0, 0, 0, 0.6);
+      box-shadow: 0 1px 0 0 #ffffff;
+    }
+
+    &:hover &__text,
+    &:focus &__text {
+      color: #ffffff;
+    }
+  }
+}

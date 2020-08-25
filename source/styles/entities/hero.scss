@@ -1,0 +1,14 @@
+@media (min-width: $min-desktop-width), (max-width: $max-desktop-width) {
+
+  .hero {
+    padding-top: 12%;
+    background-image: url('../images/hero-bg.png');
+
+    &__body {
+      width: 100%;
+      box-sizing: border-box;
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+  }
+}
