@@ -17,14 +17,12 @@
 
     &__link {
       display: flex;
-      padding-top: 18px;
-      padding-bottom: 18px;
+      padding-top: 10px;
+      padding-bottom: 10px;
       color: #ffffff;
 
-      &:hover,
-      &:focus {
-        color: rgba(255, 255, 255, 0.8);
-        box-shadow: 0 1px 0 0 #ffffff;
+      &:active {
+        opacity: 0.5;
       }
     }
 
@@ -32,6 +30,14 @@
       font-size: 14px;
       line-height: 1.4;
       text-transform: uppercase;
+      padding-top: 8px;
+      padding-bottom: 8px;
+    }
+
+    &__link:hover &__text,
+    &__link:focus &__text {
+      color: rgba(255, 255, 255, 0.8);
+      box-shadow: 0 1px 0 0 #ffffff;
     }
   }
 }

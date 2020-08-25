@@ -24,8 +24,7 @@
 
     &:hover,
     &:focus {
-      background-color: rgba(0, 0, 0, 0.5);
-      box-shadow: 0 1px 0 0 #ffffff;
+      background-color: #C94D18;
     }
 
     &:hover &__text,
@@ -34,7 +33,7 @@
     }
 
     &:active {
-      opacity: 0.3;
+      opacity: 0.5;
     }
   }
 }
