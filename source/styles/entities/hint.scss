@@ -1,0 +1,20 @@
+@media (min-width: $min-desktop-width), (max-width: $max-desktop-width) {
+
+  .hint {
+    position: relative;
+    display: flex;
+
+    &__icon {
+      align-self: flex-end;
+      margin-bottom: 5px;
+    }
+
+    &__text {
+      position: absolute;
+      top: 60%;
+      left: -60px;
+      display: flex;
+      transform: rotate(-90deg);
+    }
+  }
+}
