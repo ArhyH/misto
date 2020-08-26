@@ -1,6 +1,7 @@
 @media (min-width: $min-desktop-width) {
 
   .history {
+    padding-bottom: 150px;
 
     &__body {
       display: flex;
@@ -8,6 +9,7 @@
     }
 
     &__image-wrapper {
+      display: flex;
       margin-left: 12%;
     }
   }
