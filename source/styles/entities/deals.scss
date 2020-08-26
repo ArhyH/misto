@@ -1,0 +1,52 @@
+@media (min-width: $min-desktop-width) {
+
+  .deals {
+
+    &__body {
+      display: flex;
+      box-sizing: border-box;
+      padding-top: 12%;
+      padding-bottom: 12%;
+      padding-left: 12%;
+      padding-right: 4%;
+      margin-right: 12%;
+      background-color: #F7F7F7;
+    }
+
+    &__wrapper {
+      margin-right: 12%;
+    }
+
+    &__list {
+      display: flex;
+    }
+
+    &__list-item {
+
+      & + & {
+        margin-left: 16%;
+      }
+    }
+
+    &__title {
+      color: #C94D18;
+      margin-bottom: 30px;
+    }
+
+    &__value {
+      font-family: 'Aeroport', Arial, Helvetica;
+      font-size: 24px;
+      line-height: 1.1;
+      color: #101010;
+
+      &--theme--bold {
+        font-size: 48px;
+      }
+    }
+
+    &__text {
+      display: flex;
+      margin-top: 10px;
+    }
+  }
+}

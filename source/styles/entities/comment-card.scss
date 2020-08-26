@@ -1,0 +1,37 @@
+@media (min-width: $min-desktop-width) {
+
+  .comment-card {
+    width: 60%;
+
+    &__wrapper {
+      margin: 0;
+      padding-left: 120px;
+    }
+
+    &__text {
+      font-family: 'Aeroport';
+      font-size: 22px;
+      color: #101010;
+    }
+
+    &__citation {
+      display: block;
+      margin-top: 40px;
+    }
+
+    &__author {
+      display: flex;
+      font-size: 16px;
+      font-weight: 700;
+      color: #C94D18;
+    }
+
+    &__link {
+      display: flex;
+      margin-top: 5px;
+      font-size: 14px;
+      font-style: normal;
+      text-decoration: underline;
+    }
+  }
+}

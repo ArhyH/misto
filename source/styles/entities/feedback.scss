@@ -1,0 +1,33 @@
+@media (min-width: $min-desktop-width) {
+
+  .feedback {
+    padding-bottom: 120px;
+
+    &__body {
+      position: relative;
+      display: flex;
+      padding-left: 12%;
+    }
+
+    &__wrapper {
+      margin-right: 14%;
+    }
+
+    &__slider {
+      width: 100%;
+    }
+
+    &__slides {
+      display: flex;
+    }
+
+    &__slide {
+
+      &.is-hidden {
+        position: absolute;
+        right: -50%;
+        opacity: 0.2;
+      }
+    }
+  }
+}
