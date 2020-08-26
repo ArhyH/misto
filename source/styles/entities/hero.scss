@@ -59,6 +59,7 @@
     &__contacts-item {
       display: flex;
       height: fit-content;
+      align-items: center;
 
       & + & {
         margin-left: 30px;
@@ -66,8 +67,12 @@
     }
 
     &__contacts-text {
-      position: relative;
       margin-left: 10px;
+    }
+
+    &__contacts-link {
+      margin-left: 10px;
+      color: #ffffff;
     }
   }
 }

@@ -4,15 +4,16 @@
 
     &__body {
       display: flex;
-      padding-right: 4%;
+      padding-right: 75px;
       background-color: #F7F7F7;
     }
 
     &__content {
       display: flex;
       flex-wrap: wrap;
-      padding-left: 4%;
-      padding-top: 11%;
+      padding-left: 70px;
+      padding-top: 150px;
+      padding-bottom: 60px;
     }
 
     &__block {
@@ -53,7 +54,8 @@
     }
 
     &__control {
-      padding-top: 11%;
+      padding-top: 150px;
+      padding-bottom: 60px;
     }
 
     &__button {

@@ -1,7 +1,7 @@
 @media (min-width: $min-desktop-width) {
 
   .comment-card {
-    width: 60%;
+    width: 525px;
 
     &__wrapper {
       margin: 0;
@@ -23,6 +23,7 @@
       display: flex;
       font-size: 16px;
       font-weight: 700;
+      font-style: normal;
       color: #C94D18;
     }
 

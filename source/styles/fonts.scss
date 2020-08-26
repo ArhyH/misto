@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'Aeroport';
   src: local('Aeroport Light'), local('Aeroport-Light'),
-      url('Aeroport-Light.woff2') format('woff2'),
-      url('Aeroport-Light.woff') format('woff'),
-      url('Aeroport-Light.ttf') format('truetype');
+      url('../fonts/Aeroport-Light.woff2') format('woff2'),
+      url('../fonts/Aeroport-Light.woff') format('woff'),
+      url('../fonts/Aeroport-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
 }
@@ -11,9 +11,9 @@
 @font-face {
   font-family: 'Aeroport';
   src: local('Aeroport Regular'), local('Aeroport-Regular'),
-      url('Aeroport.woff2') format('woff2'),
-      url('Aeroport.woff') format('woff'),
-      url('Aeroport.ttf') format('truetype');
+      url('../fonts/Aeroport.woff2') format('woff2'),
+      url('../fonts/Aeroport.woff') format('woff'),
+      url('../fonts/Aeroport.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
@@ -21,9 +21,9 @@
 @font-face {
   font-family: 'Aeroport';
   src: local('Aeroport Bold'), local('Aeroport-Bold'),
-      url('Aeroport-Bold.woff2') format('woff2'),
-      url('Aeroport-Bold.woff') format('woff'),
-      url('Aeroport-Bold.ttf') format('truetype');
+      url('../fonts/Aeroport-Bold.woff2') format('woff2'),
+      url('../fonts/Aeroport-Bold.woff') format('woff'),
+      url('../fonts/Aeroport-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
 }
@@ -31,9 +31,9 @@
 @font-face {
   font-family: 'Apercu Pro';
   src: local('Apercu Pro Regular'), local('Apercu-Pro-Regular'),
-      url('ApercuPro-Regular.woff2') format('woff2'),
-      url('ApercuPro-Regular.woff') format('woff'),
-      url('ApercuPro-Regular.ttf') format('truetype');
+      url('../fonts/ApercuPro-Regular.woff2') format('woff2'),
+      url('../fonts/ApercuPro-Regular.woff') format('woff'),
+      url('../fonts/ApercuPro-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
@@ -41,9 +41,9 @@
 @font-face {
   font-family: 'Apercu Pro';
   src: local('Apercu Pro Bold'), local('Apercu-Pro-Bold'),
-      url('ApercuPro-Bold.woff2') format('woff2'),
-      url('ApercuPro-Bold.woff') format('woff'),
-      url('ApercuPro-Bold.ttf') format('truetype');
+      url('../fonts/ApercuPro-Bold.woff2') format('woff2'),
+      url('../fonts/ApercuPro-Bold.woff') format('woff'),
+      url('../fonts/ApercuPro-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
 }
