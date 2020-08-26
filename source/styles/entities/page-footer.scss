@@ -1,7 +1,9 @@
-.page-footer {
-  
-  &__body {
-  
-  // Place for custom styles
+@media (min-width: $min-desktop-width) {
+
+  .page-footer {
+
+    &__body {
+      display: flex;
+    }
   }
 }
