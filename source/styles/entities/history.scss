@@ -5,17 +5,20 @@
 
     &__body {
       display: flex;
-      padding-left: 12%;
     }
 
     &__wrapper {
-      padding-top: 115px;
-      padding-bottom: 115px;
+      display: flex;
+      align-items: center;
+      margin-right: 30px;
     }
 
     &__image-wrapper {
       display: flex;
-      margin-left: 12%;
+    }
+
+    &__image {
+      margin-left: auto;
     }
   }
 }

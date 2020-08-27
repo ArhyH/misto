@@ -6,11 +6,8 @@
       position: absolute;
       top: 0;
       display: flex;
-      width: 100%;
       box-sizing: border-box;
-      padding-top: 3%;
-      padding-left: 5%;
-      padding-right: 5%;
+      padding-top: 40px;
       z-index: 2;
     }
 
@@ -27,8 +24,6 @@
     }
 
     &__navigation {
-      width: 38%;
-      margin-left: 6%;
       height: fit-content;
     }
 
@@ -45,7 +40,6 @@
     &__body {
       left: 50%;
       transform: translateX(-50%);
-      width: 1450px;
     }
   }
 }

@@ -1,0 +1,44 @@
+
+  .events-preview {
+
+    &__heading {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    &__small-title {
+      font-size: 12px;
+      font-weight: 700;
+      color: #C94D18;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+      margin-right: 20px;
+    }
+
+    &__date {
+      font-style: 14px;
+      color: #999999;
+    }
+
+    &__text {
+      font-size: 18px;
+
+      &--theme--bold {
+        font-weight: 700;
+        color: #101010;
+      }
+    }
+
+    &__link {
+      display: flex;
+      align-items: center;
+
+      &:hover,
+      &:focus {
+        color: #000000;
+        text-decoration: underline;
+        opacity: 0.8;
+      }
+    }
+  }

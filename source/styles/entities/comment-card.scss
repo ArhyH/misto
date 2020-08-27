@@ -1,11 +1,9 @@
 @media (min-width: $min-desktop-width) {
 
   .comment-card {
-    width: 525px;
 
     &__wrapper {
       margin: 0;
-      padding-left: 120px;
     }
 
     &__text {

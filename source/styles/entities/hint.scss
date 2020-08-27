@@ -1,7 +1,7 @@
 @media (min-width: $min-desktop-width), (max-width: $max-desktop-width) {
 
   .hint {
-    position: relative;
+    position: absolute;
     display: flex;
 
     &__icon {
@@ -12,8 +12,6 @@
 
     &__text {
       position: absolute;
-      left: -79px;
-      top: 56%;
       display: flex;
       transform: rotate(-90deg);
       writing-mode: horizontal-tb;

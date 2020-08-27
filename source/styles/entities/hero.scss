@@ -1,8 +1,8 @@
 @media (min-width: $min-desktop-width) {
 
   .hero {
-    padding-top: 12%;
-    padding-bottom: 5%;
+    padding-top: 175px;
+    padding-bottom: 70px;
     background-image: url('../images/hero-bg.png');
     background-size: cover;
 
@@ -12,38 +12,31 @@
 
     &__body {
       display: flex;
-      width: 100%;
       box-sizing: border-box;
-      padding-left: 5%;
-      padding-right: 5%;
       color: #ffffff;
     }
 
     &__wrapper {
-      padding-left: 16%;
+      width: 100%;
+      padding-left: 190px;
     }
 
-    &__content {
-      padding-right: 40%;
-    }
 
     &__title {
       font-size: 89px;
       line-height: 1.1;
       color: #ffffff;
-
+      margin-bottom: 50px;
     }
 
     &__text {
-      margin-top: 6%;
       font-size: 18px;
-      padding-right: 30%;
     }
 
     &__lists {
       display: flex;
       align-items: center;
-      margin-top: 8%;
+      margin-top: 100px;
     }
 
     &__lists-icon {
@@ -53,17 +46,13 @@
 
     &__contacts {
       display: flex;
-      margin-right: 14%;
+      margin-right: 100px;
     }
 
     &__contacts-item {
       display: flex;
       height: fit-content;
       align-items: center;
-
-      & + & {
-        margin-left: 30px;
-      }
     }
 
     &__contacts-text {
@@ -73,19 +62,6 @@
     &__contacts-link {
       margin-left: 10px;
       color: #ffffff;
-    }
-  }
-}
-
-
-@media (min-width: $max-desktop-width) {
-
-  .hero {
-
-    &__body {
-      width: 1450px;
-      margin-left: auto;
-      margin-right: auto;
     }
   }
 }
