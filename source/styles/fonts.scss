@@ -40,6 +40,16 @@
 
 @font-face {
   font-family: 'Apercu Pro';
+  src: local('Apercu  Medium'), local('Apercu--Medium'),
+      url('../fonts/ApercuPro-Medium.woff2') format('woff2'),
+      url('../fonts/ApercuPro-Medium.woff') format('woff'),
+      url('../fonts/ApercuPro-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Apercu Pro';
   src: local('Apercu Pro Bold'), local('Apercu-Pro-Bold'),
       url('../fonts/ApercuPro-Bold.woff2') format('woff2'),
       url('../fonts/ApercuPro-Bold.woff') format('woff'),

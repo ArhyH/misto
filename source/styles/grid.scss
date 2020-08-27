@@ -53,6 +53,19 @@
   width: 1290px;
 }
 
+//------------
+//Reduced Grid:
+//-------------
+
+.gm {
+  width: 470px;
+}
+
+//------------
+// Grid margin:
+//-------------
+
+
 .m1 {
   margin-right: 30px;
 }
@@ -60,6 +73,15 @@
 .m2 {
   margin-right: 140px;
 }
+
+.msa {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+//------------
+//Grid padding:
+//------------
 
 .ps {
   padding-left: 185px;
@@ -74,7 +96,3 @@
   padding-right: 185px;
 }
 
-.msa {
-  margin-left: auto;
-  margin-right: auto;
-}

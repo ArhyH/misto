@@ -1,9 +1,94 @@
 @media (min-width: $min-desktop-width), (max-width: $max-desktop-width) {
 
   .toggle-menu {
+    position: fixed;
+    top: 200px;
+    right: 0;
 
     &.is-hidden {
       display: none;
+    }
+
+    &__body {
+      display: flex;
+      flex-wrap: wrap;
+      padding-left: 80px;
+      padding-right: 80px;
+      padding-top: 50px;
+      box-sizing: border-box;
+      z-index: 3;
+      background-color: #ffffff;
+      height: 900px;
+    }
+
+    &__header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 60px;
+    }
+
+    &__button {
+      display: flex;
+      height: fit-content;
+      margin-left: auto;
+      padding: 8px;
+      cursor: pointer;
+
+      &:hover,
+      &:focus {
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+
+      &:active {
+        opacity: 0.5;
+      }
+    }
+
+    &__button:hover &__button-icon,
+    &__button:focus &__button-icon {
+      fill: #ffffff;
+    }
+
+    &__button-icon {
+      fill: #C4C4C4;
+    }
+
+    &__title {
+      font-size: 48px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+
+    &__group {
+
+      & + & {
+        margin-top: 50px;
+      }
+    }
+
+    &__group-title {
+      margin-bottom: 25px;
+      color: #C94D18;
+    }
+
+    &__list-item {
+      display: flex;
+
+      & + & {
+        margin-top: 15px;
+      }
+    }
+
+    &__item {
+      font-weight: 400;
+      color: #101010;
+    }
+
+    &__price {
+      margin-left: auto;
+      font-weight: 500;
+      color: #101010;
+      position: relative;
     }
   }
 }
