@@ -80,11 +80,12 @@
     }
 
     &__button {
-      width: 44px;
-      height: 44px;
-      padding-left: 15px;
-      padding-right: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       box-sizing: border-box;
+      width: 44px;
+      padding: 17px 14px;
       border: 1px solid #33384B;
       border-radius: 50%;
       cursor: pointer;

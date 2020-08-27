@@ -1,9 +1,10 @@
 @media (min-width: $min-desktop-width), (max-width: $max-desktop-width) {
 
-  .toggle-menu {
+  .modal-menu {
     position: fixed;
-    top: 200px;
+    top: 0;
     right: 0;
+    z-index: 4;
 
     &.is-hidden {
       display: none;

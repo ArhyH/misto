@@ -5,6 +5,8 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/go-to-top.js" async defer></script>
+    <script src="js/modal-menu.js" async defer></script>
   </head>
   <body>
     <header class="page-header">
@@ -47,87 +49,10 @@
           </ul>
         </nav>
         <div class="page-header__control g3">
-          <a href="#" class="control" data-trigger="menu" data-triggeredBy="theme">
+          <a href="#" class="control" data-trigger="open-menu" data-triggeredBy="theme">
             <span class="control__text">Подивитися меню</span>
           </a>
         </div>
-        <section class="toggle-menu g6 is-hidden">
-          <div class="toggle-menu__body">
-            <div class="toggle-menu__header gm">
-              <h2 class="toggle-menu__title">Меню</h2>
-              <button class="toggle-menu__button" type="button" data-trigger="menu">
-                <svg class="toggle-menu__button-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M24 1.41L22.6.02 12 10.62 1.4.01 0 1.42 10.6 12 0 22.59l1.4 1.39L12 13.38l10.6 10.6 1.4-1.4L13.39 12 24 1.41z"/></svg>
-              </button>
-            </div>
-            <div class="toggle-menu__group gm">
-              <h3 class="toggle-menu__group-title">Класика</h3>
-              <ul class="toggle-menu__list">
-                <li class="toggle-menu__list-item">
-                  <p class="toggle-menu__item">Еспресо</p>
-                  <p class="toggle-menu__price">30грн</p>
-                </li>
-                <li class="toggle-menu__list-item">
-                  <p class="toggle-menu__item">Американо</p>
-                  <p class="toggle-menu__price">35грн</p>
-                </li>
-                <li class="toggle-menu__list-item">
-                  <p class="toggle-menu__item">Американо з молоком</p>
-                  <p class="toggle-menu__price">40грн</p>
-                </li>
-                <li class="toggle-menu__list-item">
-                  <p class="toggle-menu__item">Лате</p>
-                  <p class="toggle-menu__price">50грн</p>
-                </li>
-                <li class="toggle-menu__list-item">
-                  <p class="toggle-menu__item">Капучино</p>
-                  <p class="toggle-menu__price">45грн</p>
-                </li>
-                <li class="toggle-menu__list-item">
-                  <p class="toggle-menu__item">Подвійний капучино</p>
-                  <p class="toggle-menu__price">60грн</p>
-                </li>
-                <li class="toggle-menu__list-item">
-                  <p class="toggle-menu__item">Флет-вайт</p>
-                  <p class="toggle-menu__price">60грн</p>
-                </li>
-              </ul>
-            </div>
-            <div class="toggle-menu__group gm">
-              <h3 class="toggle-menu__group-title">Альтернатива</h3>
-              <ul class="toggle-menu__list">
-                <li class="toggle-menu__list-item">
-                  <p class="toggle-menu__item">Фільтр</p>
-                  <p class="toggle-menu__price">40грн</p>
-                </li>
-                <li class="toggle-menu__list-item">
-                  <p class="toggle-menu__item">Chemex, V60, Aeropress</p>
-                  <p class="toggle-menu__price">65грн</p>
-                </li>
-                <li class="toggle-menu__list-item">
-                  <p class="toggle-menu__item">Кава по-в’єтнамськи</p>
-                  <p class="toggle-menu__price">45грн</p>
-                </li>
-              </ul>
-            </div>
-            <div class="toggle-menu__group gm">
-              <h3 class="toggle-menu__group-title">Трішки більше, ніж класика</h3>
-              <ul class="toggle-menu__list">
-                <li class="toggle-menu__list-item">
-                  <p class="toggle-menu__item">Лате з кедровими горішками</p>
-                  <p class="toggle-menu__price">30грн</p>
-                </li>
-                <li class="toggle-menu__list-item">
-                  <p class="toggle-menu__item">Капучино з солоною карамеллю</p>
-                  <p class="toggle-menu__price">35грн</p>
-                </li>
-                <li class="toggle-menu__list-item">
-                  <p class="toggle-menu__item">Лате з суниці</p>
-                  <p class="toggle-menu__price">40грн</p>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
       </div>
     </header>
     <main class="page-main">
@@ -141,7 +66,7 @@
           </article>
           <div class="hero__wrapper">
             <div class="hero__content g6">
-              <h1 class="hero__title">Смачна кава та&nbsp;суцільний затишок</h1>
+              <h1 class="hero__title" id="top">Смачна кава та&nbsp;суцільний затишок</h1>
               <p class="hero__text g4">У нас є 44 корисних та sugar-free десертів, 50+&nbsp;різновидів&nbsp;кави та затишна атмосфера.</p>
             </div>
             <div class="hero__lists">
@@ -485,12 +410,90 @@
             <p class="page-footer__copyright g3">© 2019 Coffee in the MISTO</p>
           </div>
           <div class="page-footer__control g1">
-            <button class="page-footer__button" data-trigger="to-top">
+            <a href="#top" class="page-footer__button" data-scroll="to-top" data-trigger="go-to-top">
               <svg class="page-footer__button-icon" width="14" height="8" xmlns="http://www.w3.org/2000/svg"><path d="M13.37 6.68c0-.1-.06-.22-.14-.3L7 .13A.46.46 0 006.7 0c-.11 0-.23.05-.32.13L.13 6.38a.46.46 0 00-.13.3c0 .11.05.23.13.31l.67.67c.08.08.2.13.31.13.1 0 .23-.05.31-.13L6.68 2.4l5.27 5.26c.08.08.2.13.3.13.13 0 .23-.05.31-.13l.67-.67c.08-.08.14-.2.14-.3z" fill="#33384B"/></svg>
-            </button>
+            </a>
           </div>
         </div>
       </footer>
+      <div class="modal-backdrop is-hidden"></div>
+      <section class="modal-menu g6 is-hidden" data-triggeredBy="menu">
+        <div class="modal-menu__body">
+          <div class="modal-menu__header gm">
+            <h2 class="modal-menu__title">Меню</h2>
+            <button class="modal-menu__button" type="button" data-trigger="close-menu">
+              <svg class="modal-menu__button-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M24 1.41L22.6.02 12 10.62 1.4.01 0 1.42 10.6 12 0 22.59l1.4 1.39L12 13.38l10.6 10.6 1.4-1.4L13.39 12 24 1.41z"/></svg>
+            </button>
+          </div>
+          <div class="modal-menu__group gm">
+            <h3 class="modal-menu__group-title">Класика</h3>
+            <ul class="modal-menu__list">
+              <li class="modal-menu__list-item">
+                <p class="modal-menu__item">Еспресо</p>
+                <p class="modal-menu__price">30грн</p>
+              </li>
+              <li class="modal-menu__list-item">
+                <p class="modal-menu__item">Американо</p>
+                <p class="modal-menu__price">35грн</p>
+              </li>
+              <li class="modal-menu__list-item">
+                <p class="modal-menu__item">Американо з молоком</p>
+                <p class="modal-menu__price">40грн</p>
+              </li>
+              <li class="modal-menu__list-item">
+                <p class="modal-menu__item">Лате</p>
+                <p class="modal-menu__price">50грн</p>
+              </li>
+              <li class="modal-menu__list-item">
+                <p class="modal-menu__item">Капучино</p>
+                <p class="modal-menu__price">45грн</p>
+              </li>
+              <li class="modal-menu__list-item">
+                <p class="modal-menu__item">Подвійний капучино</p>
+                <p class="modal-menu__price">60грн</p>
+              </li>
+              <li class="modal-menu__list-item">
+                <p class="modal-menu__item">Флет-вайт</p>
+                <p class="modal-menu__price">60грн</p>
+              </li>
+            </ul>
+          </div>
+          <div class="modal-menu__group gm">
+            <h3 class="modal-menu__group-title">Альтернатива</h3>
+            <ul class="modal-menu__list">
+              <li class="modal-menu__list-item">
+                <p class="modal-menu__item">Фільтр</p>
+                <p class="modal-menu__price">40грн</p>
+              </li>
+              <li class="modal-menu__list-item">
+                <p class="modal-menu__item">Chemex, V60, Aeropress</p>
+                <p class="modal-menu__price">65грн</p>
+              </li>
+              <li class="modal-menu__list-item">
+                <p class="modal-menu__item">Кава по-в’єтнамськи</p>
+                <p class="modal-menu__price">45грн</p>
+              </li>
+            </ul>
+          </div>
+          <div class="modal-menu__group gm">
+            <h3 class="modal-menu__group-title">Трішки більше, ніж класика</h3>
+            <ul class="modal-menu__list">
+              <li class="modal-menu__list-item">
+                <p class="modal-menu__item">Лате з кедровими горішками</p>
+                <p class="modal-menu__price">30грн</p>
+              </li>
+              <li class="modal-menu__list-item">
+                <p class="modal-menu__item">Капучино з солоною карамеллю</p>
+                <p class="modal-menu__price">35грн</p>
+              </li>
+              <li class="modal-menu__list-item">
+                <p class="modal-menu__item">Лате з суниці</p>
+                <p class="modal-menu__price">40грн</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>

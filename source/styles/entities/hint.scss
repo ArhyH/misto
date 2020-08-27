@@ -1,12 +1,12 @@
 @media (min-width: $min-desktop-width), (max-width: $max-desktop-width) {
 
   .hint {
-    position: absolute;
-    bottom: 45px;
-    left: 0;
-    display: flex;
+    position: relative;
 
     &__text {
+      position: absolute;
+      top: 55%;
+      left: -85px;
       display: flex;
       transform: rotate(-90deg);
       writing-mode: horizontal-tb;
@@ -21,7 +21,7 @@
       &::before {
         content: '';
         position: absolute;
-        right: 286px;
+        right: 153%;
         top: -2px;
         display: block;
         width: 26px;
