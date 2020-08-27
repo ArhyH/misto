@@ -1,6 +1,10 @@
 
   .events-preview {
 
+    &__body {
+      margin-left: 15px;
+    }
+
     &__heading {
       display: flex;
       align-items: center;
@@ -10,14 +14,16 @@
     &__small-title {
       font-size: 12px;
       font-weight: 700;
+      line-height: 14px;
+      letter-spacing: 0.06em;
       color: #C94D18;
-      letter-spacing: 0.6px;
       text-transform: uppercase;
       margin-right: 20px;
     }
 
     &__date {
-      font-style: 14px;
+      font-size: 14px;
+      line-height: 1;
       color: #999999;
     }
 
@@ -27,6 +33,7 @@
       &--theme--bold {
         font-weight: 700;
         color: #101010;
+        line-height: 30px;
       }
     }
 

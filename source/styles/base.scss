@@ -34,13 +34,6 @@ button {
   border-radius: 0;
 }
 
-section {
-
-  & + & {
-    padding-top: 150px;
-  }
-}
-
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);

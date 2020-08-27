@@ -3,33 +3,25 @@
   .slider-controls {
     display: flex;
     align-items: center;
-    margin-top: 60px;
 
     &__helper {
       display: flex;
     }
 
     &__button {
-
-      &:first-child {
-        margin-right: 20px;
-      }
-
-      &:last-child {
-        margin-left: 20px;
-      }
-    }
-
-    &__button.is-active  &__icon {
+      display: flex;
       fill: #C94D18;
-    }
 
-    &__icon {
-      fill: #c4c4c4;
+      &.is-disabled:disabled {
+        fill: #c4c4c4;
+      }
     }
 
     &__helper {
+      letter-spacing: 0.05em;
       color: #999999;
+      margin-left: 20px;
+      margin-right: 20px;
     }
 
     &__span {

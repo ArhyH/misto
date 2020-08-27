@@ -5,19 +5,19 @@
   }
 
   &__title {
+    font-size: 18px;
     color: #C94D18;
   }
 
   &__value {
     margin-top: 25px;
-    margin-bottom: 10px;
     font-size: 25px;
     line-height: 1.5;
   }
 
   &__value-number {
-    font-size: 42px;
-    line-height: 1.1;
+    font-size: 48px;
+    line-height: 1;
   }
 
   &__value,
@@ -30,5 +30,6 @@
   &__text {
     display: flex;
     margin-top: 10px;
+    line-height: 1.4;
   }
 }

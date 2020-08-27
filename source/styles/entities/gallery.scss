@@ -1,11 +1,16 @@
 @media (min-width: $min-desktop-width) {
 
   .gallery {
+    padding-top: 140px;
 
     &__body {
       position: relative;
       display: flex;
       width: 100%;
+    }
+
+    &__content {
+      padding-top: 60px;
     }
 
     &__image-container {
@@ -23,6 +28,10 @@
         position: absolute;
         right: 0;
       }
+    }
+
+    &__slider-controls {
+      margin-top: 68px;
     }
   }
 }

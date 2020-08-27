@@ -24,7 +24,8 @@
 
     &__title {
       font-size: 89px;
-      line-height: 1.1;
+      line-height: 1.05;
+      // line-height: 105%;
       color: #ffffff;
       margin-bottom: 50px;
     }
@@ -41,18 +42,23 @@
 
     &__lists-icon {
       display: flex;
+      align-self: flex-start;
       margin-left: auto;
     }
 
     &__contacts {
       display: flex;
-      margin-right: 50px;
+      margin-right: 31px;
     }
 
     &__contacts-item {
       display: flex;
       height: fit-content;
-      align-items: center;
+      align-items: baseline;
+
+      & + & {
+        margin-left: 37px;
+      }
     }
 
     &__contacts-text {

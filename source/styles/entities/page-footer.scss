@@ -4,16 +4,32 @@
 
     &__body {
       display: flex;
-      padding-right: 75px;
+      padding-right: 40px;
       background-color: #F7F7F7;
+    }
+
+    &__map-wrapper {
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 306px;
+        right: 300px;
+        z-index: 2;
+        display: block;
+        width: 37px;
+        height: 37px;
+        background-image: url('../images/map-pin.svg');
+      }
     }
 
     &__content {
       display: flex;
       flex-wrap: wrap;
       padding-left: 70px;
-      padding-top: 150px;
-      padding-bottom: 60px;
+      padding-top: 145px;
+      padding-bottom: 65px;
     }
 
     &__block {
@@ -25,7 +41,7 @@
 
     &__title {
       color: #C94D18;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
     }
 
     &__text {

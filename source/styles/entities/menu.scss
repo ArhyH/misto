@@ -1,9 +1,14 @@
 @media (min-width: $min-desktop-width) {
 
   .menu {
+    padding-top: 150px;
 
     &__body {
       display: flex;
+    }
+
+    &__wrapper {
+      padding-top: 5px;
     }
 
     &__list {
@@ -23,21 +28,32 @@
 
     &__control {
       display: flex;
-      padding: 10px 45px;
+      padding-left: 40px;
+      padding-right: 43px;
+      padding-bottom: 20px;
       margin-bottom: 40px;
       color: #c4c4c4;
-      letter-spacing: 0.5px;
 
       &.is-active {
+        padding-left: 45px;
         box-shadow: 0 2px 0 0 #C94D18;
         color: #101010;
       }
+    }
 
-      &:hover,
-      &:focus {
-        color: #101010;
-        opacity: 0.7;
-      }
+    &__control:hover &__control-text,
+    &__control:focus &__control-text{
+      color: #101010;
+      opacity: 0.7;
+    }
+
+    &__control-text {
+      font-family: "Apercu Pro";
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
     }
   }
 }

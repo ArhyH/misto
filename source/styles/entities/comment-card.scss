@@ -3,7 +3,19 @@
   .comment-card {
 
     &__wrapper {
+      position: relative;
       margin: 0;
+      padding-left: 120px;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 78px;
+        height: 66px;
+        background-image: url('../images/citation.svg');
+      }
     }
 
     &__text {
@@ -20,6 +32,7 @@
     &__author {
       display: flex;
       font-size: 16px;
+      line-height: 1;
       font-weight: 700;
       font-style: normal;
       color: #C94D18;
