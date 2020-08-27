@@ -2,16 +2,11 @@
 
   .hint {
     position: absolute;
+    bottom: 45px;
+    left: 0;
     display: flex;
 
-    &__icon {
-      align-self: flex-end;
-      margin-bottom: 5px;
-      fill: #ffffff;
-    }
-
     &__text {
-      position: absolute;
       display: flex;
       transform: rotate(-90deg);
       writing-mode: horizontal-tb;
@@ -22,6 +17,18 @@
       letter-spacing: 2px;
       opacity: 0.2;
       text-transform: uppercase;
+
+      &::before {
+        content: '';
+        position: absolute;
+        right: 286px;
+        top: -2px;
+        display: block;
+        width: 26px;
+        height: 26px;
+        transform: rotate(90deg);
+        background-image: url('../images/right-arrow.svg');
+      }
     }
   }
 }

@@ -11,16 +11,19 @@
   &__value {
     margin-top: 25px;
     margin-bottom: 10px;
-    font-family: 'Aeroport', Arial, Helvetica;
-    font-size: 24px;
-    line-height: 1.1;
-    color: #101010;
+    font-size: 25px;
+    line-height: 1.5;
   }
 
   &__value-number {
-    font-family: 'Aeroport', Arial, Helvetica;
-    font-size: 48px;
+    font-size: 42px;
     line-height: 1.1;
+  }
+
+  &__value,
+  &__value-number {
+    font-family: 'Aeroport', Arial, Helvetica;
+    font-weight: 300;
     color: #101010;
   }
 
