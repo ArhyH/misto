@@ -28,14 +28,13 @@
 
     &__control {
       display: flex;
-      padding-left: 40px;
-      padding-right: 43px;
+      justify-content: center;
       padding-bottom: 20px;
       margin-bottom: 40px;
       color: #c4c4c4;
+      width: 135px;
 
       &.is-active {
-        padding-left: 45px;
         box-shadow: 0 2px 0 0 #C94D18;
         color: #101010;
       }

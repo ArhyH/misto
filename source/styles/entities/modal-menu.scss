@@ -31,28 +31,9 @@
         background: #C94D18;
       }
 
-      &::-webkit-scrollbar-button {
-        height: 65px;
-      }
-
-      // &::-webkit-scrollbar-track {
-      //   height: 70px;
-      // }
-
-      // &::-webkit-scrollbar-track-piece {
-
-      // }
-
-      // &::-webkit-resizer{
-      //   height: 70px;
-      // }
-
-      // &::-webkit-scrollbar-corner{
-      //   height: 70px;
-      // }
-
-      // &::-webkit-scrollbar-thumb{
-      //   height: 70px;
+      // ScrollBar track height:
+      // &::-webkit-scrollbar-button {
+      //   height: 65px;
       // }
     }
 

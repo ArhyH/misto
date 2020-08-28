@@ -115,17 +115,26 @@
           <ul class="gallery__list m2">
             <li class="gallery__list-item" data-state="active">
               <div class="gallery__image-container">
-                <img class="gallery__image" src="images/gallery-1.png"  srcset="images/gallery-1@2x.png 2x" alt="Фото відвідувачів нашого закладу">
+                <picture>
+                  <source type="image/webp" srcset="images/gallery-1.webp 1x, images/gallery-1@2x.webp 2x">
+                  <img class="gallery__image" src="images/gallery-1.jpg"  srcset="images/gallery-1@2x.jpg 2x" alt="Фото відвідувачів нашого закладу">
+                </picture>
               </div>
             </li>
             <li class="gallery__list-item" data-state="next" data-state="invisible-right">
               <div class="gallery__image-container">
-                <img class="gallery__image" src="images/gallery-1.png" srcset="images/gallery-2@2x.png 2x" alt="Фото баристи">
+                <picture>
+                  <source type="image/webp" srcset="images/gallery-1.webp 1x, images/gallery-2@2x.webp 2x">
+                  <img class="gallery__image" src="images/gallery-1.jpg" srcset="images/gallery-2@2x.jpg 2x" alt="Фото баристи">
+                </picture>
               </div>
             </li>
             <li class="gallery__list-item" data-state="invisible-right">
               <div class="gallery__image-container">
-                <img class="gallery__image" src="images/gallery-1.png"  srcset="images/gallery-1@2x.png 2x" alt="Фото відвідувачів нашого закладу">
+                <picture>
+                  <source type="image/webp" srcset="images/gallery-1.webp 1x, images/gallery-1@2x.webp 2x">
+                  <img class="gallery__image" src="images/gallery-1.jpg"  srcset="images/gallery-1@2x.jpg 2x" alt="Фото відвідувачів нашого закладу">
+                </picture>
               </div>
             </li>
           </ul>
@@ -172,7 +181,10 @@
             <ul class="menu__list">
               <li class="menu__list-item">
                 <article class="item-card g2">
-                  <img src="images/Aeropress.png" srcset="images/Aeropress@2x.png 2x" alt="Процес приготування аеропресу" class="item-card__image">
+                  <picture>
+                    <source type="image/webp" srcset="images/Aeropress.webp 1x, images/Aeropress@2x.webp 2x">
+                    <img src="images/Aeropress.jpg" srcset="images/Aeropress@2x.jpg 2x" alt="Процес приготування аеропресу" class="item-card__image">
+                  </picture>
                   <div class="item-card__wrapper">
                     <h3 class="item-card__title">Aeropress</h3>
                     <p class="item-card__price">65 грн</p>
@@ -181,7 +193,10 @@
               </li>
               <li class="menu__list-item">
                 <article class="item-card g2">
-                  <img src="images/Kapu.png" srcset="images/Kapu@2x.png 2x" alt="Кава з малюнком" class="item-card__image">
+                  <picture>
+                    <source type="image/webp" srcset="images/Kapu.webp 1x, images/Kapu@2x.webp 2x">
+                    <img src="images/Kapu.jpg" srcset="images/Kapu@2x.jpg 2x" alt="Кава з малюнком" class="item-card__image">
+                  </picture>
                   <div class="item-card__wrapper">
                     <h3 class="item-card__title">Капугрей</h3>
                     <p class="item-card__price">65 грн</p>
@@ -190,7 +205,10 @@
               </li>
               <li class="menu__list-item">
                 <article class="item-card g2">
-                  <img src="images/Latte.png" srcset="images/Latte@2x.png 2x" alt="Лате з суницею" class="item-card__image">
+                  <picture>
+                    <source type="image/webp" srcset="images/Latte.webp 1x, images/Latte@2x.webp 2x">
+                    <img src="images/Latte.jpg" srcset="images/Latte@2x.jpg 2x" alt="Лате з суницею" class="item-card__image">
+                  </picture>
                   <div class="item-card__wrapper">
                     <h3 class="item-card__title">Лате з суниці</h3>
                     <p class="item-card__price">55 грн</p>
@@ -319,7 +337,10 @@
                 <article class="important-news g3">
                   <div class="important-news__body">
                     <div class="important-news__image-wrapper">
-                      <img class="important-news_image" src="images/news.png" srcset="images/news@2x.png 2x" alt="Фото процесу приготування кави" width="260" height="164">
+                      <picture>
+                        <source type="image/webp" srcset="images/news.webp 1x, mages/news@2x.webp 2x">
+                        <img class="important-news_image" src="images/news.jpg" srcset="images/news@2x.jpg 2x" alt="Фото процесу приготування кави" width="260" height="164">
+                      </picture>
                     </div>
                     <div class="important-news__heading">
                       <h3 class="important-news__group-title">Про події</h3>
@@ -385,14 +406,20 @@
             </div>
           </div>
           <div class="history__image-wrapper g8">
-            <img class="history__image" src="images/History.png" srcset="images/History@2x.png 2x" alt="Фото відвідувачів на плівку" width="815" height="580">
+            <picture>
+              <source type="image/webp" srcset="images/History.webp 1x, images/History@2x.webp 2x">
+              <img class="history__image" src="images/History.jpg" srcset="images/History@2x.jpg 2x" alt="Фото відвідувачів на плівку" width="815" height="580">
+            </picture>
           </div>
         </div>
       </section>
       <footer class="page-footer">
         <div class="page-footer__body">
           <div class="page-footer__map-wrapper">
-            <img src="images/map.png" alt="Мапа" class="page-footer__map">
+            <picture>
+              <source type="image/webp" srcset="images/map.webp">
+              <img src="images/map.jpg" alt="Мапа" class="page-footer__map">
+            </picture>
             <!-- Custom iframe map -->
           </div>
           <div class="page-footer__content g4">
