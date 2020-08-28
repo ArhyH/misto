@@ -68,6 +68,16 @@
     &__contacts-link {
       margin-left: 10px;
       color: #ffffff;
+
+      &:hover,
+      &:focus {
+        fill-opacity: 0.7;
+        text-decoration: underline;
+      }
+
+      &:active {
+        opacity: 0.3;
+      }
     }
   }
 }

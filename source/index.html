@@ -8,7 +8,7 @@
     <script src="js/go-to-top.js" async defer></script>
     <script src="js/modal-menu.js" async defer></script>
   </head>
-  <body>
+  <body data-overflow="disabled">
     <header class="page-header">
       <div class="page-header__body g12">
         <div class="page-header__logo g2">
@@ -112,15 +112,20 @@
       </section>
       <section class="gallery">
         <div class="gallery__body">
-          <ul class="gallery__list">
-            <li class="gallery__list-item m2">
+          <ul class="gallery__list m2">
+            <li class="gallery__list-item" data-state="active">
               <div class="gallery__image-container">
                 <img class="gallery__image" src="images/gallery-1.png"  srcset="images/gallery-1@2x.png 2x" alt="Фото відвідувачів нашого закладу">
               </div>
             </li>
-            <li class="gallery__list-item">
+            <li class="gallery__list-item" data-state="next" data-state="invisible-right">
               <div class="gallery__image-container">
-                <img class="gallery__image" src="images/gallery-2.png" alt="Фото баристи">
+                <img class="gallery__image" src="images/gallery-1.png" srcset="images/gallery-2@2x.png 2x" alt="Фото баристи">
+              </div>
+            </li>
+            <li class="gallery__list-item" data-state="invisible-right">
+              <div class="gallery__image-container">
+                <img class="gallery__image" src="images/gallery-1.png"  srcset="images/gallery-1@2x.png 2x" alt="Фото відвідувачів нашого закладу">
               </div>
             </li>
           </ul>
@@ -134,11 +139,11 @@
             </div>
             <div class="gallery__slider-controls">
               <div class="slider-controls">
-                <button class="slider-controls__button is-disabled">
+                <button class="slider-controls__button is-disabled" type="button" aria-label="Показати попереднє фото">
                   <svg class="slider-controls__icon" width="44" height="44" xmlns="http://www.w3.org/2000/svg"><path d="M17.83 13.82a.85.85 0 011.2 0c.34.32.34.87 0 1.2l-6.12 6.13h20.23a.85.85 0 110 1.7H12.91l6.13 6.12c.33.34.33.89 0 1.21a.85.85 0 01-1.21 0l-7.58-7.58a.85.85 0 010-1.2l7.58-7.58z"/></g><defs><clipPath id="clip0"><path transform="translate(10 10)" d="M0 0h24v24H0z"/></clipPath></defs></svg>
                 </button>
                 <p class="slider-controls__helper"><span class="slider-controls__span">01&nbsp;</span>/ 12</p>
-                <button class="slider-controls__button">
+                <button class="slider-controls__button" aria-label="Показати наступне фото">
                   <svg class="slider-controls__icon" width="44" height="44" xmlns="http://www.w3.org/2000/svg"><path d="M26.17 30.18a.85.85 0 01-1.2 0 .85.85 0 010-1.2l6.12-6.13H10.86a.85.85 0 110-1.7h20.23l-6.13-6.12a.87.87 0 010-1.21.85.85 0 011.21 0l7.58 7.58c.33.33.33.87 0 1.2l-7.58 7.58z"/></g><defs><clipPath id="clip0"><path transform="rotate(-180 17 17)" d="M0 0h24v24H0z"/></clipPath></defs></svg>
                 </button>
               </div>
@@ -244,11 +249,11 @@
             </div>
             <div class="feedback__slider-controls">
               <div class="slider-controls">
-                <button class="slider-controls__button">
+                <button class="slider-controls__button is-disabled" type="button" aria-label="Показати наступний коментар">
                   <svg class="slider-controls__icon" width="44" height="44" xmlns="http://www.w3.org/2000/svg"><path d="M17.83 13.82a.85.85 0 011.2 0c.34.32.34.87 0 1.2l-6.12 6.13h20.23a.85.85 0 110 1.7H12.91l6.13 6.12c.33.34.33.89 0 1.21a.85.85 0 01-1.21 0l-7.58-7.58a.85.85 0 010-1.2l7.58-7.58z"/></g><defs><clipPath id="clip0"><path transform="translate(10 10)" d="M0 0h24v24H0z"/></clipPath></defs></svg>
                 </button>
                 <p class="slider-controls__helper"><span class="slider-controls__span">01&nbsp;</span>/ 04</p>
-                <button class="slider-controls__button is-active ">
+                <button class="slider-controls__button" type="button" aria-label="Показати попередній коментар">
                   <svg class="slider-controls__icon" width="44" height="44" xmlns="http://www.w3.org/2000/svg"><path d="M26.17 30.18a.85.85 0 01-1.2 0 .85.85 0 010-1.2l6.12-6.13H10.86a.85.85 0 110-1.7h20.23l-6.13-6.12a.87.87 0 010-1.21.85.85 0 011.21 0l7.58 7.58c.33.33.33.87 0 1.2l-7.58 7.58z"/></g><defs><clipPath id="clip0"><path transform="rotate(-180 17 17)" d="M0 0h24v24H0z"/></clipPath></defs></svg>
                 </button>
               </div>
@@ -256,7 +261,7 @@
           </div>
           <div class="feedback__slider">
             <ul class="feedback__slides">
-              <li class="feedback__slide m1">
+              <li class="feedback__slide m1" data-state="active">
                 <article class="comment-card g5">
                   <blockquote class="comment-card__wrapper">
                     <p class="comment-card__text g4">Для мене MISTO — це щось&nbsp;особливе. Приходжу,&nbsp;п'ю&nbsp;смачну каву, насолоджуюся&nbsp;музикою,&nbsp;працюю. Ідеально.</p>
@@ -267,7 +272,18 @@
                   </blockquote>
                 </article>
               </li>
-              <li class="feedback__slide is-hidden">
+              <li class="feedback__slide" data-state="next">
+                <article class="comment-card g5">
+                  <blockquote class="comment-card__wrapper">
+                    <p class="comment-card__text g4">Атмосферний заклад, куди можна з тваринами.&nbsp;Цікавий&nbsp;інтер'єр. Часто відвідують&nbsp;іноземці.</p>
+                    <cite class="comment-card__citation">
+                      <span class="comment-card__author g2">Олена Гала</span>
+                      <a href="#" class="comment-card__link g2">Відгук с Google Maps</a>
+                    </cite>
+                  </blockquote>
+                </article>
+              </li>
+              <li class="feedback__slide" data-state="invisible-right">
                 <article class="comment-card g5">
                   <blockquote class="comment-card__wrapper">
                     <p class="comment-card__text g4">Атмосферний заклад, куди можна з тваринами.&nbsp;Цікавий&nbsp;інтер'єр. Часто відвідують&nbsp;іноземці.</p>
@@ -493,6 +509,18 @@
               <li class="modal-menu__list-item">
                 <p class="modal-menu__item">Лате з суниці</p>
                 <p class="modal-menu__price">40грн</p>
+              </li>
+              <li class="modal-menu__list-item">
+                <p class="modal-menu__item">Капучино</p>
+                <p class="modal-menu__price">45грн</p>
+              </li>
+              <li class="modal-menu__list-item">
+                <p class="modal-menu__item">Подвійний капучино</p>
+                <p class="modal-menu__price">60грн</p>
+              </li>
+              <li class="modal-menu__list-item">
+                <p class="modal-menu__item">Флет-вайт</p>
+                <p class="modal-menu__price">60грн</p>
               </li>
             </ul>
           </div>

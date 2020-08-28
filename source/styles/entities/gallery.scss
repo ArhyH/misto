@@ -7,10 +7,12 @@
       position: relative;
       display: flex;
       width: 100%;
+      overflow: hidden;
     }
 
-    &__content {
+    &__wrapper {
       padding-top: 60px;
+      z-index: 3;
     }
 
     &__image-container {
@@ -18,15 +20,30 @@
     }
 
     &__list {
+      // position: relative;
       display: flex;
+      width: 705px;
+      height: 502px;
     }
 
     &__list-item {
-      display: flex;
+      position: absolute;
+      width: 100%;
+      left: 0;
 
-      &:nth-child(2) {
-        position: absolute;
-        right: 0;
+      &[data-state="active"] {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      &[data-state="next"] {
+        left: 87%;
+        opacity: 0.2;
+      }
+
+      &[data-state="invisible-right"] {
+        left: 100%;
+        opacity: 0;
       }
     }
 
