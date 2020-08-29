@@ -2,12 +2,35 @@
 
   .page-header {
 
+    &.sticky-position {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      z-index: 3;
+      height: fit-content;
+    }
+
+    &.sticky-position &__body {
+      width: 1440px;
+      padding: 15px 75px;
+      position: fixed;
+      left: 0;
+      top: 0;
+      background-color: #ffffff;
+    }
+
+    &.sticky-position &__logo-img {
+      fill: #C94D18;
+    }
+
     &__body {
       position: absolute;
       top: 0;
+      left: 75px;
+      padding-top: 40px;
       display: flex;
       box-sizing: border-box;
-      padding-top: 40px;
       z-index: 2;
     }
 
@@ -17,10 +40,6 @@
 
     &__logo-img {
       fill: #ffffff;
-
-      &.theme--light {
-        fill: #C94D18;
-      }
     }
 
     &__navigation {
@@ -29,6 +48,7 @@
     }
 
     &__control {
+      display: flex;
       margin-left: auto;
     }
   }
@@ -36,11 +56,16 @@
 
 @media (min-width: $max-desktop-width) {
 
-  .page-header {
+  // .page-header {
 
-    &__body {
-      left: 50%;
-      transform: translateX(-50%);
-    }
-  }
+  //   &__body {
+  //     left: 50%;
+  //     transform: translateX(-50%);
+  //   }
+
+  //   &.sticky-position &__body {
+  //     left: 50%;
+  //     transform: translateX(-50%);
+  //   }
+  // }
 }

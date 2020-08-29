@@ -15,7 +15,7 @@
       flex-wrap: wrap;
       padding: 50px 80px;
       box-sizing: border-box;
-      z-index: 3;
+      z-index: 5;
       background-color: #ffffff;
       height: 100vh;
       overflow-y: scroll;
@@ -30,11 +30,6 @@
         border-radius: 0;
         background: #C94D18;
       }
-
-      // ScrollBar track height:
-      // &::-webkit-scrollbar-button {
-      //   height: 65px;
-      // }
     }
 
     &__header {

@@ -17,7 +17,6 @@ function hideMenu () {
   body.classList.remove('disable-scroll');
 }
 
-
 menuOpenTrigger.addEventListener('click', el => {
   el.preventDefault();
   showMenu();
