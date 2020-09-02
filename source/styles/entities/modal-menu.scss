@@ -87,12 +87,27 @@
     }
 
     &__item {
+      display: flex;
+      width: 100%;
       font-weight: 400;
       color: #101010;
+      position: relative;
+
+      &::after {
+        content: '';
+        height: 2px;
+        background-image: url('../images/dots.svg');
+        flex-grow: 1;
+        margin-top: 15px;
+        margin-left: 2px;
+      }
     }
 
     &__price {
+      display: flex;
+      justify-content: center;
       margin-left: auto;
+      min-width: 50px;
       font-weight: 500;
       color: #101010;
       position: relative;

@@ -10,18 +10,22 @@
 
     &__map-wrapper {
       position: relative;
+      width: 815px;
+      height: 700px;
+      background-image: url('../images/map.jpg');
+      background-size: cover;
 
       &::after {
-        content: '';
+        content: url('../images/map-pin.svg');
         position: absolute;
-        top: 306px;
-        right: 300px;
-        z-index: 2;
-        display: block;
-        width: 37px;
-        height: 37px;
-        background-image: url('../images/map-pin.svg');
+        top: 320px;
+        right: 310px;
       }
+    }
+
+    &__map {
+      position: relative;
+      z-index: 2;
     }
 
     &__content {

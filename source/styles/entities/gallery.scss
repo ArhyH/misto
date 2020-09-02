@@ -30,21 +30,37 @@
       position: absolute;
       width: 100%;
       left: 0;
+      transition: opacity 1s;
 
-      &[data-state="active"] {
+      &.is-active {
         left: 50%;
         transform: translateX(-50%);
       }
 
-      &[data-state="next"] {
+      // &[data-state="active"] {
+      //   left: 50%;
+      //   transform: translateX(-50%);
+      // }
+
+      &.is-next {
         left: 87%;
         opacity: 0.2;
       }
 
-      &[data-state="invisible-right"] {
+      // &[data-state="next"] {
+      //   left: 87%;
+      //   opacity: 0.2;
+      // }
+
+      &.invisible-right {
         left: 100%;
         opacity: 0;
       }
+
+      // &[data-state="invisible-right"] {
+      //   left: 100%;
+      //   opacity: 0;
+      // }
     }
 
     &__slider-controls {
