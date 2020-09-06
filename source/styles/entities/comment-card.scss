@@ -1,54 +1,72 @@
-@media (min-width: $min-desktop-width) {
+.comment-card {
+
+  &__wrapper {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding-left: 60px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -60px;
+      width: 78px;
+      height: 66px;
+      background-image: url('../images/citation.svg');
+    }
+  }
+
+  &__text {
+    width: 84%;
+    font-family: 'Aeroport';
+    font-size: 18px;
+    color: #101010;
+  }
+
+  &__citation {
+    display: block;
+    margin-top: 40px;
+  }
+
+  &__author {
+    display: flex;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 700;
+    font-style: normal;
+    color: #C94D18;
+  }
+
+  &__link {
+    display: flex;
+    margin-top: 5px;
+    font-size: 14px;
+    font-style: normal;
+    text-decoration: underline;
+
+    &:hover,
+    &:focus {
+      color: rgba(85, 85, 85, 0.8)
+    }
+  }
+}
+
+@media (min-width: 1065px) {
 
   .comment-card {
 
     &__wrapper {
-      position: relative;
-      margin: 0;
       padding-left: 120px;
 
       &::before {
-        content: '';
-        position: absolute;
-        top: 0;
         left: 0;
-        width: 78px;
-        height: 66px;
-        background-image: url('../images/citation.svg');
       }
     }
 
     &__text {
-      font-family: 'Aeroport';
+      max-width: 420px;
       font-size: 22px;
-      color: #101010;
-    }
-
-    &__citation {
-      display: block;
-      margin-top: 40px;
-    }
-
-    &__author {
-      display: flex;
-      font-size: 16px;
-      line-height: 1;
-      font-weight: 700;
-      font-style: normal;
-      color: #C94D18;
-    }
-
-    &__link {
-      display: flex;
-      margin-top: 5px;
-      font-size: 14px;
-      font-style: normal;
-      text-decoration: underline;
-
-      &:hover,
-      &:focus {
-        color: rgba(85, 85, 85, 0.8)
-      }
     }
   }
 }

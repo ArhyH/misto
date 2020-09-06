@@ -11,8 +11,6 @@ function nextSlide () {
 
   i++;
 
-  // slideCounter.innerHTML = ('0' + (1 + i) + '&nbsp;');
-
   if (i >= slides.length) {
       i = 0;
   }
@@ -23,6 +21,8 @@ function nextSlide () {
 
   slides[i+1].classList.add('is-next');
   slides[i+1].classList.remove('invisible-right');
+
+  slideCounter.innerHTML = `0${i+1}&nbsp;`;
 }
 
 function prevSlide () {
@@ -31,8 +31,6 @@ function prevSlide () {
   slides[i].classList.add('invisible-right');
 
   i = i - 1;
-
-  // slideCounter.innerHTML = ('0' - (1 + i) + '&nbsp;');
 
   if (i < 0) {
     i = slides.length - 1;
@@ -44,6 +42,8 @@ function prevSlide () {
 
   slides[i-1].classList.add('is-next');
   slides[i-1].classList.remove('invisible-right');
+
+  slideCounter.innerHTML = `0${i+1}&nbsp;`;
 }
 
 buttonNext.addEventListener('click', function () {

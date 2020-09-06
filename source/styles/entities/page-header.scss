@@ -1,71 +1,86 @@
-@media (min-width: $min-desktop-width) {
+.page-header {
+
+  &.sticky-position {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+    height: fit-content;
+  }
+
+  &.sticky-position &__body {
+    width: 100%;
+    padding: 15px 5.2%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #ffffff;
+  }
+
+  &.sticky-position &__logo-img {
+    fill: #C94D18;
+  }
+
+  &__body {
+    position: absolute;
+    top: 0;
+    left: 5.2%;
+    width: 89.5833%;
+    padding-top: 40px;
+    display: flex;
+    box-sizing: border-box;
+    z-index: 2;
+  }
+
+  &__logo {
+    display: flex;
+    width: 14.728%;
+    min-width: 157px;
+  }
+
+  &__logo-img {
+    fill: #ffffff;
+  }
+
+  &__navigation {
+    width: 48.837%;
+    height: fit-content;
+    margin-left: 30px;
+  }
+
+  &__control {
+    display: flex;
+    width: 23.25%;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 1140px) {
 
   .page-header {
 
-    &.sticky-position {
-      position: fixed;
-      left: 0;
-      top: 0;
-      width: 100%;
-      z-index: 3;
-      height: fit-content;
-    }
-
-    &.sticky-position &__body {
-      width: 1440px;
-      padding: 15px 75px;
-      position: fixed;
-      left: 0;
-      top: 0;
-      background-color: #ffffff;
-    }
-
-    &.sticky-position &__logo-img {
-      fill: #C94D18;
-    }
-
-    &__body {
-      position: absolute;
-      top: 0;
-      left: 75px;
-      padding-top: 40px;
-      display: flex;
-      box-sizing: border-box;
-      z-index: 2;
-    }
-
-    &__logo {
-      display: flex;
-    }
-
-    &__logo-img {
-      fill: #ffffff;
-    }
-
     &__navigation {
-      height: fit-content;
-      margin-left: 30px;
-    }
-
-    &__control {
-      display: flex;
-      margin-left: auto;
+      width: 52%;
     }
   }
 }
 
 @media (min-width: $max-desktop-width) {
 
-  // .page-header {
+  .page-header {
 
-  //   &__body {
-  //     left: 50%;
-  //     transform: translateX(-50%);
-  //   }
+    &__body {
+      width: 1290px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
 
-  //   &.sticky-position &__body {
-  //     left: 50%;
-  //     transform: translateX(-50%);
-  //   }
-  // }
+    &.sticky-position &__body {
+      width: 1440px;
+      padding: 15px 75px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
 }

@@ -1,34 +1,31 @@
-@media (min-width: $min-desktop-width), (max-width: $max-desktop-width) {
+.hint {
+  position: relative;
 
-  .hint {
-    position: relative;
+  &__text {
+    position: absolute;
+    top: 53%;
+    left: -94px;
+    display: flex;
+    transform: rotate(-90deg);
+    writing-mode: horizontal-tb;
+    writing-mode: horizontal-bt;
+    font-family: 'Apercu Pro';
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    opacity: 0.2;
+    text-transform: uppercase;
 
-    &__text {
+    &::before {
+      content: '';
       position: absolute;
-      top: 53%;
-      left: -94px;
-      display: flex;
-      transform: rotate(-90deg);
-      writing-mode: horizontal-tb;
-      writing-mode: horizontal-bt;
-      font-family: 'Apercu Pro';
-      font-size: 14px;
-      font-weight: 700;
-      letter-spacing: 0.2em;
-      opacity: 0.2;
-      text-transform: uppercase;
-
-      &::before {
-        content: '';
-        position: absolute;
-        right: 148%;
-        top: 0;
-        display: block;
-        width: 26px;
-        height: 26px;
-        transform: rotate(90deg);
-        background-image: url('../images/right-arrow.svg');
-      }
+      right: 148%;
+      top: 0;
+      display: block;
+      width: 26px;
+      height: 26px;
+      transform: rotate(90deg);
+      background-image: url('../images/right-arrow.svg');
     }
   }
 }
