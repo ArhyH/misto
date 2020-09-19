@@ -1,59 +1,93 @@
-let buttonPrev = document.querySelector('[data-role="button-prev"]');
-let buttonNext = document.querySelector('[data-role="button-next"]');
-let slides = document.querySelectorAll('[data-role="slide"]');
-let slideCounter = document.querySelector('[data-role="slide-counter"]');
-let i = 0;
+function initSlider({
+  sliderName,
+  visibleClassname,
+  nextClassname,
+  })  {
 
-function nextSlide () {
-  slides[i].classList.remove('is-active');
-  slides[i].classList.remove('is-next');
-  slides[i].classList.add('invisible-right');
+  const sliderContainerSelector = `[data-slider-root="${sliderName}"]`,
+        sliderElementSelector = `[data-slider="${sliderName}"]`,
+        rootContainer = document.querySelector(sliderContainerSelector),
+        slides = [...document.querySelectorAll(`${sliderContainerSelector} .slide`)],
+        slidesAmount = slides.length,
+        outputAllNode = document.querySelector(`${sliderElementSelector}[data-slider-num="all"]`),
+        outputCurrentNode = document.querySelector(`${sliderElementSelector}[data-slider-num="current"]`),
+        sliderButtons = [...document.querySelectorAll(`${sliderElementSelector}[data-slider-action]`)];
 
-  i++;
+  function toggleSlider({
+    action,
+    slideNumber
+    }) {
 
-  if (i >= slides.length) {
-      i = 0;
+    let currentSlideIndex = findCurrentSlideIndex(),
+      futureActiveSlideIndex,
+      futureNextSlideIndex;
+    clearSliderClassnames();
+
+    switch (action) {
+      case 'prev':
+        futureActiveSlideIndex = slides[currentSlideIndex - 1] ? currentSlideIndex - 1 : slidesAmount - 1;
+        break;
+      case 'next':
+        futureActiveSlideIndex = slides[currentSlideIndex + 1] ? currentSlideIndex + 1 : 0;
+        break;
+      case 'any':
+        futureActiveSlideIndex = slideNumber - 1;
+        break;
+      default:
+        break;
+    }
+
+    futureNextSlideIndex = futureActiveSlideIndex == slidesAmount - 1 ? 0 : futureActiveSlideIndex + 1;
+    slides[futureActiveSlideIndex].classList.add(visibleClassname);
+    slides[futureNextSlideIndex].classList.add(nextClassname);
+    outputCurrentSlide();
   }
 
-  slides[i].classList.add('is-active');
-  slides[i].classList.remove('is-next');
-  slides[i].classList.remove('invisible-right');
-
-  slides[i+1].classList.add('is-next');
-  slides[i+1].classList.remove('invisible-right');
-
-  slideCounter.innerHTML = `0${i+1}&nbsp;`;
-}
-
-function prevSlide () {
-  slides[i].classList.remove('is-active');
-  slides[i].classList.remove('is-next');
-  slides[i].classList.add('invisible-right');
-
-  i = i - 1;
-
-  if (i < 0) {
-    i = slides.length - 1;
+  function findCurrentSlideIndex() {
+    return slides.findIndex(el => el.classList.contains(visibleClassname));
   }
 
-  slides[i].classList.add('is-active');
-  slides[i].classList.remove('is-next');
-  slides[i].classList.remove('invisible-right');
+  function findNextSlideIndex() {
+    return slides.findIndex(el => el.classList.contains(nextClassname));
+  }
 
-  slides[i-1].classList.add('is-next');
-  slides[i-1].classList.remove('invisible-right');
+  function clearSliderClassnames() {
+    if (slides[findNextSlideIndex()]) {
+      slides[findNextSlideIndex()].classList.remove(nextClassname);
+    }
+    if (slides[findCurrentSlideIndex()]) {
+      slides[findCurrentSlideIndex()].classList.remove(visibleClassname);
+    }
+  }
 
-  slideCounter.innerHTML = `0${i+1}&nbsp;`;
+  function outputCurrentSlide() {
+    outputCurrentNode.innerHTML = findCurrentSlideIndex() + 1;
+  }
+
+  outputAllNode.innerHTML = slidesAmount;
+  outputCurrentSlide();
+  /* Add event listeners to slider buttons */
+  sliderButtons.forEach(el => {
+    let buttonAction = el.dataset.sliderAction,
+      buttonActionNumber = el.dataset.sliderActionNumber ? el.dataset.sliderActionNumber : null;
+    el.addEventListener('click', e => {
+      e.preventDefault();
+      toggleSlider({
+        action: buttonAction,
+        slideNumber: buttonActionNumber
+      });
+    });
+  });
 }
 
-buttonNext.addEventListener('click', function () {
-  nextSlide();
-})
+initSlider({
+  sliderName: 'gallery-slider',
+  visibleClassname: 'is-active',
+  nextClassname: 'is-next'
+});
 
-buttonPrev.addEventListener('click', function () {
-  prevSlide();
-})
-
-if (slides[i] != 0) {
-  buttonPrev.classList.remove('is-disabled');
-}
+initSlider({
+  sliderName: 'feedback-slider',
+  visibleClassname: 'is-active',
+  nextClassname: 'is-next'
+});

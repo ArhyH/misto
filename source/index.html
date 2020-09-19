@@ -115,8 +115,8 @@
       </section>
       <section class="gallery">
         <div class="gallery__body">
-          <ul class="gallery__list" data-role="slider">
-            <li class="gallery__list-item is-active" data-role="slide">
+          <ul class="gallery__list" data-slider-root="gallery-slider">
+            <li class="gallery__list-item slide is-active">
               <div class="gallery__image-container">
                 <picture>
                   <source type="image/webp" srcset="images/gallery-1.webp 1x, images/gallery-1@2x.webp 2x">
@@ -124,7 +124,7 @@
                 </picture>
               </div>
             </li>
-            <li class="gallery__list-item is-next" data-role="slide">
+            <li class="gallery__list-item slide is-next">
               <div class="gallery__image-container">
                 <picture>
                   <source type="image/webp" srcset="images/gallery-1.webp 1x, images/gallery-2@2x.webp 2x">
@@ -132,7 +132,7 @@
                 </picture>
               </div>
             </li>
-            <li class="gallery__list-item invisible-right" data-role="slide">
+            <li class="gallery__list-item slide">
               <div class="gallery__image-container">
                 <picture>
                   <source type="image/webp" srcset="images/gallery-1.webp 1x, images/gallery-1@2x.webp 2x">
@@ -151,11 +151,15 @@
             </div>
             <div class="gallery__slider-controls">
               <div class="slider-controls">
-                <button class="slider-controls__button is-disabled" type="button" data-role="button-prev" aria-label="Показати попереднє фото">
+                <button class="slider-controls__button is-disabled" type="button" data-slider="gallery-slider" data-slider-action="prev" aria-label="Показати попереднє фото">
                   <svg class="slider-controls__icon" width="44" height="44" xmlns="http://www.w3.org/2000/svg"><path d="M17.83 13.82a.85.85 0 011.2 0c.34.32.34.87 0 1.2l-6.12 6.13h20.23a.85.85 0 110 1.7H12.91l6.13 6.12c.33.34.33.89 0 1.21a.85.85 0 01-1.21 0l-7.58-7.58a.85.85 0 010-1.2l7.58-7.58z"/></g><defs><clipPath id="clip0"><path transform="translate(10 10)" d="M0 0h24v24H0z"/></clipPath></defs></svg>
                 </button>
-                <p class="slider-controls__helper"><span class="slider-controls__span" data-role="slide-counter">01&nbsp;</span>/ 12</p>
-                <button class="slider-controls__button" data-role="button-next" aria-label="Показати наступне фото">
+                <p class="slider-controls__helper">
+                  <span class="slider-controls__span" data-slider="gallery-slider" data-slider-num="current">01&nbsp;</span>
+                  <span class="slider-controls__span">&nbsp;/&nbsp;</span>
+                  <span class="slider-controls__span" data-slider="gallery-slider" data-slider-num="all">12</span>
+                </p>
+                <button class="slider-controls__button" data-slider="gallery-slider" data-slider-action="next" aria-label="Показати наступне фото">
                   <svg class="slider-controls__icon" width="44" height="44" xmlns="http://www.w3.org/2000/svg"><path d="M26.17 30.18a.85.85 0 01-1.2 0 .85.85 0 010-1.2l6.12-6.13H10.86a.85.85 0 110-1.7h20.23l-6.13-6.12a.87.87 0 010-1.21.85.85 0 011.21 0l7.58 7.58c.33.33.33.87 0 1.2l-7.58 7.58z"/></g><defs><clipPath id="clip0"><path transform="rotate(-180 17 17)" d="M0 0h24v24H0z"/></clipPath></defs></svg>
                 </button>
               </div>
@@ -270,19 +274,23 @@
             </div>
             <div class="feedback__slider-controls">
               <div class="slider-controls">
-                <button class="slider-controls__button is-disabled" type="button" data-role="comment-button-prev" aria-label="Показати попередній коментар">
+                <button class="slider-controls__button is-disabled" type="button" data-slider="feedback-slider" data-slider-action="prev" aria-label="Показати попередній коментар">
                   <svg class="slider-controls__icon" width="44" height="44" xmlns="http://www.w3.org/2000/svg"><path d="M17.83 13.82a.85.85 0 011.2 0c.34.32.34.87 0 1.2l-6.12 6.13h20.23a.85.85 0 110 1.7H12.91l6.13 6.12c.33.34.33.89 0 1.21a.85.85 0 01-1.21 0l-7.58-7.58a.85.85 0 010-1.2l7.58-7.58z"/></g><defs><clipPath id="clip0"><path transform="translate(10 10)" d="M0 0h24v24H0z"/></clipPath></defs></svg>
                 </button>
-                <p class="slider-controls__helper"><span class="slider-controls__span">01&nbsp;</span>/ 04</p>
-                <button class="slider-controls__button" type="button" data-role="comment-button-next" aria-label="Показати наступний коментар">
+                <p class="slider-controls__helper">
+                  <span class="slider-controls__span" data-slider="feedback-slider" data-slider-num="current">01&nbsp;</span>
+                  <span class="slider-controls__span">&nbsp;/&nbsp;</span>
+                  <span class="slider-controls__span" data-slider="feedback-slider" data-slider-num="all">04</span>
+                </p>
+                <button class="slider-controls__button" type="button" data-slider="feedback-slider" data-slider-action="next" aria-label="Показати наступний коментар">
                   <svg class="slider-controls__icon" width="44" height="44" xmlns="http://www.w3.org/2000/svg"><path d="M26.17 30.18a.85.85 0 01-1.2 0 .85.85 0 010-1.2l6.12-6.13H10.86a.85.85 0 110-1.7h20.23l-6.13-6.12a.87.87 0 010-1.21.85.85 0 011.21 0l7.58 7.58c.33.33.33.87 0 1.2l-7.58 7.58z"/></g><defs><clipPath id="clip0"><path transform="rotate(-180 17 17)" d="M0 0h24v24H0z"/></clipPath></defs></svg>
                 </button>
               </div>
             </div>
           </div>
           <div class="feedback__slider">
-            <ul class="feedback__slides" data-role="slider">
-              <li class="feedback__slide m1 is-active" data- state="active" data-role="comment-slide">
+            <ul class="feedback__slides" data-slider-root="feedback-slider">
+              <li class="feedback__slide m1 slide is-active">
                 <article class="comment-card">
                   <blockquote class="comment-card__wrapper">
                     <p class="comment-card__text">Для мене MISTO — це щось&nbsp;особливе. Приходжу,&nbsp;п'ю&nbsp;смачну каву, насолоджуюся&nbsp;музикою, працюю. Ідеально.</p>
@@ -293,7 +301,7 @@
                   </blockquote>
                 </article>
               </li>
-              <li class="feedback__slide is-next" data- state="next" data-role="comment-slide">
+              <li class="feedback__slide slide is-next">
                 <article class="comment-card">
                   <blockquote class="comment-card__wrapper">
                     <p class="comment-card__text">Атмосферний заклад, куди можна з тваринами.&nbsp;Цікавий&nbsp;інтер'єр. Часто відвідують&nbsp;іноземці.</p>
@@ -304,7 +312,7 @@
                   </blockquote>
                 </article>
               </li>
-              <li class="feedback__slide invisible-right" data- state="invisible-right" data-role="comment-slide">
+              <li class="feedback__slide slide">
                 <article class="comment-card">
                   <blockquote class="comment-card__wrapper">
                     <p class="comment-card__text">Атмосферний заклад, куди можна з тваринами.&nbsp;Цікавий&nbsp;інтер'єр. Часто відвідують&nbsp;іноземці.</p>

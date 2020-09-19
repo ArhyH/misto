@@ -25,23 +25,21 @@
 
   &__slide {
     position: absolute;
+    left: 100%;
     width: 100%;
-    left: 0;
+    opacity: 0;
+    transition: opacity 1s;
 
     &.is-active {
       left: 50%;
       transform: translateX(-50%);
+      opacity: 1;
     }
 
     &.is-next {
       left: 0;
       top: 245px;
       opacity: 0.2;
-    }
-
-    &.invisible-right {
-      left: 100%;
-      opacity: 0;
     }
   }
 
