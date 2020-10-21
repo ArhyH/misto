@@ -1,7 +1,7 @@
 const menuOpenTrigger = document.querySelector('[data-trigger="open-menu"]');
 const menuCloseTrigger = document.querySelector('[data-trigger="close-menu"]');
 const modalBackdrop = document.querySelector('.modal-backdrop');
-const triggerMenu = document.querySelector('[data-triggeredBy="menu"');
+const triggerMenu = document.querySelector('[data-triggeredBy="menu"]');
 const body = document.querySelector('[data-overflow]');
 const hideClassname = 'is-hidden';
 
