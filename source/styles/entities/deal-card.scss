@@ -1,0 +1,45 @@
+.deal-card {
+
+  &__body {
+    padding-right: 45px;
+  }
+
+  &__title {
+    font-size: 18px;
+    color: #C94D18;
+  }
+
+  &__value {
+    margin-top: 25px;
+    font-size: 25px;
+    line-height: 1.5;
+  }
+
+  &__value-number {
+    font-size: 36px;
+    line-height: 1;
+  }
+
+  &__value,
+  &__value-number {
+    font-family: 'Aeroport', Arial, Helvetica;
+    font-weight: 300;
+    color: #101010;
+  }
+
+  &__text {
+    display: flex;
+    margin-top: 10px;
+    line-height: 1.4;
+  }
+}
+
+@media (min-width: 1050px) {
+
+  .deal-card {
+
+    &__value-number {
+      font-size: 48px;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.slider-controls {
+  display: flex;
+  align-items: center;
+
+  &__helper {
+    display: flex;
+  }
+
+  &__button {
+    display: flex;
+    fill: #C94D18;
+    border: none;
+
+    &.is-disabled {
+      fill: #c4c4c4;
+    }
+
+    &:hover,
+    &:focus {
+      fill: rgba(0, 0, 0, 0.8);
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  &__helper {
+    letter-spacing: 0.05em;
+    color: #999999;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  &__span {
+    color: #101010;
+  }
+}

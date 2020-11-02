@@ -1,0 +1,38 @@
+.text-content {
+
+  &__title + &__text {
+    margin-top: 30px;
+  }
+
+  &__text {
+
+    & + & {
+      margin-top: 25px;
+    }
+  }
+
+  &__title {
+    font-size: 34px;
+  }
+
+  &__heading {
+    display: flex;
+    margin-bottom: 10px;
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #C94D18;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+}
+
+@media (min-width: 1050px) {
+
+  .text-content{
+
+    &__title {
+      font-size: 42px;
+    }
+  }
+}

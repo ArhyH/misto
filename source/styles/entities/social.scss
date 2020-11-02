@@ -1,0 +1,47 @@
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  width: 28.037%;
+  align-items: center;
+
+  &--located--footer {
+    width: 100%;
+    margin-top: 10px;
+    margin-left: -20px;
+  }
+
+  &__list {
+    display: flex;
+    margin-left: 10px;
+  }
+
+  &__list-item {
+    display: flex;
+  }
+
+  &__link {
+    display: flex;
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  &__icon {
+    fill: #ffffff;
+
+    &--theme--dark {
+      fill: #555555;
+    }
+  }
+
+  &__link:hover &__icon,
+  &__link:focus &__icon {
+    fill-opacity: 0.7;
+  }
+}

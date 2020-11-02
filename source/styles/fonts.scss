@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'Aeroport';
+  src: local('Aeroport Light'), local('Aeroport-Light'),
+      url('../fonts/Aeroport-Light.woff2') format('woff2'),
+      url('../fonts/Aeroport-Light.woff') format('woff'),
+      url('../fonts/Aeroport-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aeroport';
+  src: local('Aeroport Regular'), local('Aeroport-Regular'),
+      url('../fonts/Aeroport.woff2') format('woff2'),
+      url('../fonts/Aeroport.woff') format('woff'),
+      url('../fonts/Aeroport.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aeroport';
+  src: local('Aeroport Bold'), local('Aeroport-Bold'),
+      url('../fonts/Aeroport-Bold.woff2') format('woff2'),
+      url('../fonts/Aeroport-Bold.woff') format('woff'),
+      url('../fonts/Aeroport-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Apercu Pro';
+  src: local('Apercu  Regular'), local('Apercu--Regular'),
+      url('../fonts/ApercuPro.woff2') format('woff2'),
+      url('../fonts/ApercuPro.woff') format('woff'),
+      url('../fonts/ApercuPro.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Apercu Pro';
+  src: local('Apercu  Medium'), local('Apercu--Medium'),
+      url('../fonts/ApercuPro-Medium.woff2') format('woff2'),
+      url('../fonts/ApercuPro-Medium.woff') format('woff'),
+      url('../fonts/ApercuPro-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Apercu Pro';
+  src: local('Apercu Pro Bold'), local('Apercu-Pro-Bold'),
+      url('../fonts/ApercuPro-Bold.woff2') format('woff2'),
+      url('../fonts/ApercuPro-Bold.woff') format('woff'),
+      url('../fonts/ApercuPro-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}

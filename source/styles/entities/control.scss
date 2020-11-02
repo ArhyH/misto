@@ -1,0 +1,50 @@
+.control {
+  display: flex;
+  justify-content: center;
+  height: fit-content;
+  margin-left: auto;
+  padding: 21px 37px;
+  background-color: #ffffff;
+
+  &__text {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #C94D18;
+  }
+
+  &.theme--light {
+    background-color: #C94D18;
+
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+    }
+  }
+
+  &.theme--light &__text {
+    color: #ffffff;
+  }
+
+  &.theme--light:hover &__text,
+  &.theme--light:focus &__text {
+    color: #ffffff;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #C94D18;
+  }
+
+  &:hover &__text,
+  &:focus &__text {
+    color: #ffffff;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
